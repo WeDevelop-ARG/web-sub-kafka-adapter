@@ -1,0 +1,36 @@
+{
+  "name": "@wedevelop/web-sub-kafka-adapter",
+  "version": "1.0.0",
+  "description": "Kafka adapter for web-sub.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run cleanup && babel src -D -d dist",
+    "cleanup": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeDevelop-ARG/web-sub-kafka-adapter.git"
+  },
+  "keywords": [
+    "WebSub",
+    "web-sub",
+    "Kafka"
+  ],
+  "author": "Abel M. Osorio <abel.m.osorio@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeDevelop-ARG/web-sub-kafka-adapter/issues"
+  },
+  "homepage": "https://github.com/WeDevelop-ARG/web-sub-kafka-adapter#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "kafka-node": "^4.0.2"
+  }
+}
